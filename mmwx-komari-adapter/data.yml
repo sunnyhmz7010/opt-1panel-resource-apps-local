@@ -1,0 +1,32 @@
+name: "MMWX Probe Komari Theme Adapter"
+tags:
+  - Website
+title: "MMWX Probe Komari Theme Adapter"
+description: "将 MMWX Probe 数据转换为 Komari 主题可读格式的自托管只读探针前端。"
+additionalProperties:
+  key: mmwx-komari-adapter
+  name: "MMWX Probe Komari Theme Adapter"
+  tags:
+    - Website
+  shortDescZh: "将 MMWX Probe 数据适配为 Komari 主题前端"
+  shortDescEn: "Adapt MMWX Probe data to Komari theme frontends"
+  description:
+    en: "A self-hosted read-only probe frontend that adapts MMWX Probe data to Komari themes."
+    es-es: "Un frontend de sondas de solo lectura autoalojado que adapta datos de MMWX Probe a temas de Komari."
+    ja: "MMWX ProbeのデータをKomariテーマに変換するセルフホスト型の読み取り専用プローブフロントエンドです。"
+    ms: "Frontend probe baca sahaja yang dihos sendiri untuk menyesuaikan data MMWX Probe dengan tema Komari."
+    pt-br: "Um frontend de sondas somente leitura auto-hospedado que adapta dados do MMWX Probe a temas Komari."
+    ru: "Самостоятельно размещаемый интерфейс зондов только для чтения, адаптирующий данные MMWX Probe к темам Komari."
+    ko: "MMWX Probe 데이터를 Komari 테마에 맞게 변환하는 자체 호스팅 읽기 전용 프로브 프런트엔드입니다."
+    zh-Hant: "將 MMWX Probe 資料轉換為 Komari 主題可讀格式的自託管唯讀探針前端。"
+    zh: "将 MMWX Probe 数据转换为 Komari 主题可读格式的自托管只读探针前端。"
+    tr: "MMWX Probe verilerini Komari temalarına uyarlayan, kendi kendine barındırılan salt okunur probe arayüzü."
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  architectures:
+    - amd64
+    - arm64
+  website: https://github.com/sunnyhmz7010/mmwx-probe-komari-theme-adapter
+  github: https://github.com/sunnyhmz7010/mmwx-probe-komari-theme-adapter
+  document: "https://github.com/sunnyhmz7010/mmwx-probe-komari-theme-adapter#readme"

@@ -1,0 +1,34 @@
+name: Firefox
+tags:
+  - Tool
+title: Firefox
+description: "在 Docker 容器中运行的 Firefox 浏览器，支持通过浏览器访问图形界面。"
+additionalProperties:
+  key: firefox
+  name: Firefox
+  tags:
+    - Tool
+  shortDescZh: "在 Docker 容器中运行的 Firefox 浏览器，支持通过浏览器访问图形界面。"
+  shortDescEn: "Firefox web browser running in a Docker container with browser-based GUI access."
+  description:
+    en: "Firefox web browser running in a Docker container with browser-based GUI access."
+    es-es: "Firefox web browser running in a Docker container with browser-based GUI access."
+    ja: "Firefox web browser running in a Docker container with browser-based GUI access."
+    ms: "Firefox web browser running in a Docker container with browser-based GUI access."
+    pt-br: "Firefox web browser running in a Docker container with browser-based GUI access."
+    ru: "Firefox web browser running in a Docker container with browser-based GUI access."
+    ko: "Firefox web browser running in a Docker container with browser-based GUI access."
+    zh-Hant: "在 Docker 容器中運行的 Firefox 瀏覽器，支持通過瀏覽器訪問圖形界面。"
+    zh: "在 Docker 容器中运行的 Firefox 浏览器，支持通过浏览器访问图形界面。"
+    tr: "Firefox web browser running in a Docker container with browser-based GUI access."
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  architectures:
+    - amd64
+    - arm64
+    - arm/v7
+    - 386
+  website: https://www.mozilla.org/firefox/
+  github: https://github.com/jlesage/docker-firefox
+  document: "https://github.com/jlesage/docker-firefox#readme"

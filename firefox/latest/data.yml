@@ -1,0 +1,149 @@
+additionalProperties:
+  formFields:
+    - default: "1"
+      edit: true
+      envKey: WEB_AUDIO
+      labelEn: "Web Audio"
+      labelZh: "Web 音频"
+      required: true
+      type: select
+      values:
+        - label: "开启"
+          value: "1"
+        - label: "关闭"
+          value: "0"
+      label:
+        en: "Web Audio"
+        es-es: "Web Audio"
+        ja: "Web Audio"
+        ms: "Web Audio"
+        pt-br: "Web Audio"
+        ru: "Web Audio"
+        ko: "Web Audio"
+        zh-Hant: "Web 音频"
+        zh: "Web 音频"
+        tr: "Web Audio"
+    - default: "1"
+      edit: true
+      envKey: WEB_FILE_MANAGER
+      labelEn: "Web File Manager"
+      labelZh: "Web 文件管理器"
+      required: true
+      type: select
+      values:
+        - label: "开启"
+          value: "1"
+        - label: "关闭"
+          value: "0"
+      label:
+        en: "Web File Manager"
+        es-es: "Web File Manager"
+        ja: "Web File Manager"
+        ms: "Web File Manager"
+        pt-br: "Web File Manager"
+        ru: "Web File Manager"
+        ko: "Web File Manager"
+        zh-Hant: "Web 文件管理器"
+        zh: "Web 文件管理器"
+        tr: "Web File Manager"
+    - default: Asia/Hong_Kong
+      edit: true
+      envKey: FIREFOX_TZ
+      labelEn: "Time Zone"
+      labelZh: "时区"
+      required: true
+      type: text
+      label:
+        en: "Time Zone"
+        es-es: "Time Zone"
+        ja: "Time Zone"
+        ms: "Time Zone"
+        pt-br: "Time Zone"
+        ru: "Time Zone"
+        ko: "Time Zone"
+        zh-Hant: "时区"
+        zh: "时区"
+        tr: "Time Zone"
+    - default: zh_CN.UTF-8
+      edit: true
+      envKey: FIREFOX_LANG
+      labelEn: Locale
+      labelZh: "语言区域"
+      required: true
+      type: text
+      label:
+        en: Locale
+        es-es: Locale
+        ja: Locale
+        ms: Locale
+        pt-br: Locale
+        ru: Locale
+        ko: Locale
+        zh-Hant: "语言区域"
+        zh: "语言区域"
+        tr: Locale
+    - default: "1"
+      edit: true
+      envKey: ENABLE_CJK_FONT
+      labelEn: "Enable CJK Font"
+      labelZh: "启用 CJK 字体"
+      required: true
+      type: select
+      values:
+        - label: "开启"
+          value: "1"
+        - label: "关闭"
+          value: "0"
+      label:
+        en: "Enable CJK Font"
+        es-es: "Enable CJK Font"
+        ja: "Enable CJK Font"
+        ms: "Enable CJK Font"
+        pt-br: "Enable CJK Font"
+        ru: "Enable CJK Font"
+        ko: "Enable CJK Font"
+        zh-Hant: "启用 CJK 字体"
+        zh: "启用 CJK 字体"
+        tr: "Enable CJK Font"
+    - default: "1"
+      edit: true
+      envKey: KEEP_APP_RUNNING
+      labelEn: "Keep App Running"
+      labelZh: "保持应用运行"
+      required: true
+      type: select
+      values:
+        - label: "开启"
+          value: "1"
+        - label: "关闭"
+          value: "0"
+      label:
+        en: "Keep App Running"
+        es-es: "Keep App Running"
+        ja: "Keep App Running"
+        ms: "Keep App Running"
+        pt-br: "Keep App Running"
+        ru: "Keep App Running"
+        ko: "Keep App Running"
+        zh-Hant: "保持应用运行"
+        zh: "保持应用运行"
+        tr: "Keep App Running"
+    - default: 5800
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: "Web UI Port"
+      labelZh: "Web UI 端口"
+      label:
+        en: "Web UI Port"
+        es-es: "Puerto web"
+        ja: "Web UIポート"
+        ms: "Port Web UI"
+        pt-br: "Porta da Web UI"
+        ru: "Порт веб-интерфейса"
+        ko: "웹 UI 포트"
+        zh-Hant: "Web UI 埠"
+        zh: "Web UI 端口"
+        tr: "Web UI Bağlantı Noktası"
+      required: true
+      rule: paramPort
+      type: number
