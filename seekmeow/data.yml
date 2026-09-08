@@ -1,0 +1,32 @@
+name: SeekMeow
+tags:
+  - Tool
+title: SeekMeow
+description: "自动监控 NodeSeek 新帖，按关键词筛选后推送到 MeoW。"
+additionalProperties:
+  key: seekmeow
+  name: SeekMeow
+  tags:
+    - Tool
+  shortDescZh: "自动监控 NodeSeek 新帖，按关键词筛选后推送到 MeoW。"
+  shortDescEn: "Automatically monitors NodeSeek RSS posts and pushes keyword-matched results to MeoW."
+  description:
+    en: "Automatically monitors NodeSeek RSS posts and pushes keyword-matched results to MeoW."
+    es-es: "Automatically monitors NodeSeek RSS posts and pushes keyword-matched results to MeoW."
+    ja: "Automatically monitors NodeSeek RSS posts and pushes keyword-matched results to MeoW."
+    ms: "Automatically monitors NodeSeek RSS posts and pushes keyword-matched results to MeoW."
+    pt-br: "Automatically monitors NodeSeek RSS posts and pushes keyword-matched results to MeoW."
+    ru: "Automatically monitors NodeSeek RSS posts and pushes keyword-matched results to MeoW."
+    ko: "Automatically monitors NodeSeek RSS posts and pushes keyword-matched results to MeoW."
+    zh-Hant: "自動監控 NodeSeek 新帖，按關鍵詞篩選後推送到 MeoW。"
+    zh: "自动监控 NodeSeek 新帖，按关键词筛选后推送到 MeoW。"
+    tr: "Automatically monitors NodeSeek RSS posts and pushes keyword-matched results to MeoW."
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  architectures:
+    - amd64
+    - arm64
+  website: https://github.com/sunnyhmz7010/SeekMeow
+  github: https://github.com/sunnyhmz7010/SeekMeow
+  document: "https://github.com/sunnyhmz7010/SeekMeow#readme"

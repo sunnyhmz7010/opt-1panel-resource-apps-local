@@ -1,0 +1,20 @@
+services:
+  urlproxy:
+    image: mrlee326/urlproxy:latest
+    container_name: "${CONTAINER_NAME}"
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:3000"
+    environment:
+      PASSWORD: "${PASSWORD}"
+      ALLOWED_DOMAINS: "${ALLOWED_DOMAINS}"
+      FORCE_DOWNLOAD: "${FORCE_DOWNLOAD}"
+      ALLOW_CORS: "${ALLOW_CORS}"
+      ALLOWED_CORS_DOMAINS: "${ALLOWED_CORS_DOMAINS}"
+    labels:
+      createdBy: Apps
+networks:
+  1panel-network:
+    external: true

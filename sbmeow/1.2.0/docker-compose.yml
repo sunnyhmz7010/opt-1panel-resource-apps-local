@@ -1,0 +1,25 @@
+services:
+  sbmeow:
+    image: ghcr.io/sunnyhmz7010/sbmeow:1.2.0
+    container_name: "${CONTAINER_NAME}"
+    restart: always
+    networks:
+      - 1panel-network
+    environment:
+      MEOW_NICKNAME: "${MEOW_NICKNAME}"
+      CHECK_INTERVAL_SECONDS: "${CHECK_INTERVAL_SECONDS}"
+      CATEGORIES: "${CATEGORIES}"
+      MATCH_SCOPE: "${MATCH_SCOPE}"
+      KEYWORDS: "${KEYWORDS}"
+      KEYWORD_GROUPS: "${KEYWORD_GROUPS}"
+      REGEX_PATTERNS: "${REGEX_PATTERNS}"
+      PUSH_CATEGORY: "${PUSH_CATEGORY}"
+      BLOCK_KEYWORDS: "${BLOCK_KEYWORDS}"
+      PUSH_EXISTING: "${PUSH_EXISTING}"
+      SHOW_LINK_URL: "${SHOW_LINK_URL}"
+      HEALTH_CHECK_MINUTES: "${HEALTH_CHECK_MINUTES}"
+    labels:
+      createdBy: Apps
+networks:
+  1panel-network:
+    external: true

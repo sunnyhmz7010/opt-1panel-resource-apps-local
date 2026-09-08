@@ -1,0 +1,121 @@
+additionalProperties:
+  formFields:
+    - default: ""
+      edit: true
+      envKey: PASSWORD
+      labelEn: Password
+      labelZh: "访问密码"
+      required: false
+      type: password
+      label:
+        en: Password
+        es-es: Password
+        ja: Password
+        ms: Password
+        pt-br: Password
+        ru: Password
+        ko: Password
+        zh-Hant: "访问密码"
+        zh: "访问密码"
+        tr: Password
+    - default: ""
+      edit: true
+      envKey: ALLOWED_DOMAINS
+      labelEn: "Allowed Proxy Domains"
+      labelZh: "允许代理的域名"
+      required: false
+      type: text
+      label:
+        en: "Allowed Proxy Domains"
+        es-es: "Allowed Proxy Domains"
+        ja: "Allowed Proxy Domains"
+        ms: "Allowed Proxy Domains"
+        pt-br: "Allowed Proxy Domains"
+        ru: "Allowed Proxy Domains"
+        ko: "Allowed Proxy Domains"
+        zh-Hant: "允许代理的域名"
+        zh: "允许代理的域名"
+        tr: "Allowed Proxy Domains"
+    - default: "1"
+      edit: true
+      envKey: FORCE_DOWNLOAD
+      labelEn: "Force Download"
+      labelZh: "强制下载"
+      required: true
+      type: select
+      values:
+        - label: "开启"
+          value: "1"
+        - label: "关闭"
+          value: "0"
+      label:
+        en: "Force Download"
+        es-es: "Force Download"
+        ja: "Force Download"
+        ms: "Force Download"
+        pt-br: "Force Download"
+        ru: "Force Download"
+        ko: "Force Download"
+        zh-Hant: "强制下载"
+        zh: "强制下载"
+        tr: "Force Download"
+    - default: "0"
+      edit: true
+      envKey: ALLOW_CORS
+      labelEn: "Allow CORS"
+      labelZh: "允许跨域"
+      required: true
+      type: select
+      values:
+        - label: "开启"
+          value: "1"
+        - label: "关闭"
+          value: "0"
+      label:
+        en: "Allow CORS"
+        es-es: "Allow CORS"
+        ja: "Allow CORS"
+        ms: "Allow CORS"
+        pt-br: "Allow CORS"
+        ru: "Allow CORS"
+        ko: "Allow CORS"
+        zh-Hant: "允许跨域"
+        zh: "允许跨域"
+        tr: "Allow CORS"
+    - default: "*"
+      edit: true
+      envKey: ALLOWED_CORS_DOMAINS
+      labelEn: "Allowed CORS Origins"
+      labelZh: "允许跨域来源"
+      required: false
+      type: text
+      label:
+        en: "Allowed CORS Origins"
+        es-es: "Allowed CORS Origins"
+        ja: "Allowed CORS Origins"
+        ms: "Allowed CORS Origins"
+        pt-br: "Allowed CORS Origins"
+        ru: "Allowed CORS Origins"
+        ko: "Allowed CORS Origins"
+        zh-Hant: "允许跨域来源"
+        zh: "允许跨域来源"
+        tr: "Allowed CORS Origins"
+    - default: 3000
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: "Web UI Port"
+      labelZh: "Web UI 端口"
+      label:
+        en: "Web UI Port"
+        es-es: "Puerto web"
+        ja: "Web UIポート"
+        ms: "Port Web UI"
+        pt-br: "Porta da Web UI"
+        ru: "Порт веб-интерфейса"
+        ko: "웹 UI 포트"
+        zh-Hant: "Web UI 埠"
+        zh: "Web UI 端口"
+        tr: "Web UI Bağlantı Noktası"
+      required: true
+      rule: paramPort
+      type: number

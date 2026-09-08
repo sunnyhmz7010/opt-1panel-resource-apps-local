@@ -1,0 +1,32 @@
+name: URLProxy
+tags:
+  - Tool
+title: URLProxy
+description: "用于通过网络较好的服务器中转下载资源的 URL 代理服务。"
+additionalProperties:
+  key: urlproxy
+  name: URLProxy
+  tags:
+    - Tool
+  shortDescZh: "用于通过网络较好的服务器中转下载资源的 URL 代理服务。"
+  shortDescEn: "A URL proxy service for forwarding resource downloads through a better-connected server."
+  description:
+    en: "A URL proxy service for forwarding resource downloads through a better-connected server."
+    es-es: "A URL proxy service for forwarding resource downloads through a better-connected server."
+    ja: "A URL proxy service for forwarding resource downloads through a better-connected server."
+    ms: "A URL proxy service for forwarding resource downloads through a better-connected server."
+    pt-br: "A URL proxy service for forwarding resource downloads through a better-connected server."
+    ru: "A URL proxy service for forwarding resource downloads through a better-connected server."
+    ko: "A URL proxy service for forwarding resource downloads through a better-connected server."
+    zh-Hant: "用於通過網絡較好的服務器中轉下載資源的 URL 代理服務。"
+    zh: "用于通过网络较好的服务器中转下载资源的 URL 代理服务。"
+    tr: "A URL proxy service for forwarding resource downloads through a better-connected server."
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  architectures:
+    - amd64
+    - arm64
+  website: https://github.com/lixiaofei123/urlproxy
+  github: https://github.com/lixiaofei123/urlproxy
+  document: "https://github.com/lixiaofei123/urlproxy#readme"

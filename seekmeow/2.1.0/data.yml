@@ -1,0 +1,235 @@
+additionalProperties:
+  formFields:
+    - default: ""
+      edit: true
+      envKey: MEOW_NICKNAME
+      labelEn: "MeoW Nickname"
+      labelZh: "MeoW 昵称"
+      required: true
+      type: text
+      label:
+        en: "MeoW Nickname"
+        es-es: "MeoW Nickname"
+        ja: "MeoW Nickname"
+        ms: "MeoW Nickname"
+        pt-br: "MeoW Nickname"
+        ru: "MeoW Nickname"
+        ko: "MeoW Nickname"
+        zh-Hant: "MeoW 昵称"
+        zh: "MeoW 昵称"
+        tr: "MeoW Nickname"
+    - default: 5
+      edit: true
+      envKey: CHECK_INTERVAL_SECONDS
+      labelEn: "Check Interval Seconds"
+      labelZh: "检查间隔（秒）"
+      required: true
+      type: number
+      label:
+        en: "Check Interval Seconds"
+        es-es: "Check Interval Seconds"
+        ja: "Check Interval Seconds"
+        ms: "Check Interval Seconds"
+        pt-br: "Check Interval Seconds"
+        ru: "Check Interval Seconds"
+        ko: "Check Interval Seconds"
+        zh-Hant: "检查间隔（秒）"
+        zh: "检查间隔（秒）"
+        tr: "Check Interval Seconds"
+    - default: all
+      edit: true
+      envKey: CATEGORIES
+      labelEn: "Global Board Filter (optional: all,daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox)"
+      labelZh: "全局版块过滤（可选：all,daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox）"
+      required: true
+      type: text
+      label:
+        en: "Global Board Filter (optional: all,daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox)"
+        es-es: Categories
+        ja: Categories
+        ms: Categories
+        pt-br: Categories
+        ru: Categories
+        ko: Categories
+        zh-Hant: "全局版块过滤（可选：all,daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox）"
+        zh: "全局版块过滤（可选：all,daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox）"
+        tr: Categories
+    - default: all
+      edit: true
+      envKey: MATCH_SCOPE
+      labelEn: "Match Scope"
+      labelZh: "匹配范围"
+      required: true
+      type: select
+      values:
+        - label: all
+          value: all
+        - label: title
+          value: title
+        - label: summary
+          value: summary
+      label:
+        en: "Match Scope"
+        es-es: "Match Scope"
+        ja: "Match Scope"
+        ms: "Match Scope"
+        pt-br: "Match Scope"
+        ru: "Match Scope"
+        ko: "Match Scope"
+        zh-Hant: "匹配范围"
+        zh: "匹配范围"
+        tr: "Match Scope"
+    - default: ""
+      edit: true
+      envKey: KEYWORDS
+      labelEn: Keywords
+      labelZh: "关键词"
+      required: false
+      type: text
+      label:
+        en: Keywords
+        es-es: Keywords
+        ja: Keywords
+        ms: Keywords
+        pt-br: Keywords
+        ru: Keywords
+        ko: Keywords
+        zh-Hant: "关键词"
+        zh: "关键词"
+        tr: Keywords
+    - default: "[]"
+      edit: true
+      envKey: KEYWORD_GROUPS
+      labelEn: "Keyword Groups"
+      labelZh: "组合关键词"
+      required: false
+      type: text
+      label:
+        en: "Keyword Groups"
+        es-es: "Keyword Groups"
+        ja: "Keyword Groups"
+        ms: "Keyword Groups"
+        pt-br: "Keyword Groups"
+        ru: "Keyword Groups"
+        ko: "Keyword Groups"
+        zh-Hant: "组合关键词"
+        zh: "组合关键词"
+        tr: "Keyword Groups"
+    - default: "[]"
+      edit: true
+      envKey: REGEX_PATTERNS
+      labelEn: "Regex Patterns"
+      labelZh: "正则规则"
+      required: false
+      type: text
+      label:
+        en: "Regex Patterns"
+        es-es: "Regex Patterns"
+        ja: "Regex Patterns"
+        ms: "Regex Patterns"
+        pt-br: "Regex Patterns"
+        ru: "Regex Patterns"
+        ko: "Regex Patterns"
+        zh-Hant: "正则规则"
+        zh: "正则规则"
+        tr: "Regex Patterns"
+    - default: ""
+      edit: true
+      envKey: PUSH_CATEGORY
+      labelEn: "Push Category (optional: all,daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox)"
+      labelZh: "版块匹配（可选：all,daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox）"
+      required: false
+      type: text
+      label:
+        en: "Push Category (optional: all,daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox)"
+        es-es: "Push Category"
+        ja: "Push Category"
+        ms: "Push Category"
+        pt-br: "Push Category"
+        ru: "Push Category"
+        ko: "Push Category"
+        zh-Hant: "版块匹配（可选：all,daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox）"
+        zh: "版块匹配（可选：all,daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox）"
+        tr: "Push Category"
+    - default: ""
+      edit: true
+      envKey: BLOCK_KEYWORDS
+      labelEn: "Block Keywords"
+      labelZh: "屏蔽词"
+      required: false
+      type: text
+      label:
+        en: "Block Keywords"
+        es-es: "Block Keywords"
+        ja: "Block Keywords"
+        ms: "Block Keywords"
+        pt-br: "Block Keywords"
+        ru: "Block Keywords"
+        ko: "Block Keywords"
+        zh-Hant: "屏蔽词"
+        zh: "屏蔽词"
+        tr: "Block Keywords"
+    - default: "false"
+      edit: true
+      envKey: PUSH_EXISTING
+      labelEn: "Push Existing Posts"
+      labelZh: "首次推送已有帖子"
+      required: true
+      type: select
+      values:
+        - label: "开启"
+          value: "true"
+        - label: "关闭"
+          value: "false"
+      label:
+        en: "Push Existing Posts"
+        es-es: "Push Existing Posts"
+        ja: "Push Existing Posts"
+        ms: "Push Existing Posts"
+        pt-br: "Push Existing Posts"
+        ru: "Push Existing Posts"
+        ko: "Push Existing Posts"
+        zh-Hant: "首次推送已有帖子"
+        zh: "首次推送已有帖子"
+        tr: "Push Existing Posts"
+    - default: "false"
+      edit: true
+      envKey: SHOW_LINK_URL
+      labelEn: "Show Link URL"
+      labelZh: "显示帖子链接"
+      required: true
+      type: select
+      values:
+        - label: "开启"
+          value: "true"
+        - label: "关闭"
+          value: "false"
+      label:
+        en: "Show Link URL"
+        es-es: "Show Link URL"
+        ja: "Show Link URL"
+        ms: "Show Link URL"
+        pt-br: "Show Link URL"
+        ru: "Show Link URL"
+        ko: "Show Link URL"
+        zh-Hant: "显示帖子链接"
+        zh: "显示帖子链接"
+        tr: "Show Link URL"
+    - default: 1440
+      edit: true
+      envKey: HEALTH_CHECK_MINUTES
+      labelEn: "Health Check Minutes"
+      labelZh: "自检间隔（分钟）"
+      required: true
+      type: number
+      label:
+        en: "Health Check Minutes"
+        es-es: "Health Check Minutes"
+        ja: "Health Check Minutes"
+        ms: "Health Check Minutes"
+        pt-br: "Health Check Minutes"
+        ru: "Health Check Minutes"
+        ko: "Health Check Minutes"
+        zh-Hant: "自检间隔（分钟）"
+        zh: "自检间隔（分钟）"
+        tr: "Health Check Minutes"
