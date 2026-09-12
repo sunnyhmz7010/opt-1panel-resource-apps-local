@@ -18,8 +18,6 @@ services:
       PUSH_EXISTING: "${PUSH_EXISTING}"
       SHOW_LINK_URL: "${SHOW_LINK_URL}"
       HEALTH_CHECK_MINUTES: "${HEALTH_CHECK_MINUTES}"
-    volumes:
-      - ./data:/app/data
     labels:
       createdBy: Apps
 networks:
