@@ -1,6 +1,6 @@
 services:
   mmwx-komari-adapter:
-    image: ghcr.io/sunnyhmz7010/mmwx-probe-komari-theme-adapter:2.1.5
+    image: ghcr.io/sunnyhmz7010/mmwx-probe-komari-theme-adapter:2.1.6
     container_name: "${CONTAINER_NAME}"
     restart: always
     networks:
