@@ -1,0 +1,32 @@
+name: "MMWX Probe Theme Adapter"
+tags:
+  - Website
+title: "MMWX Probe Theme Adapter"
+description: "以妙妙屋 X 为数据源的多主题探针适配器，支持 Komari 和极简探针主题。"
+additionalProperties:
+  key: mmwx-probe-theme-adapter
+  name: "MMWX Probe Theme Adapter"
+  tags:
+    - Website
+  shortDescZh: "以妙妙屋 X 为数据源，适配 Komari 和极简探针主题"
+  shortDescEn: "Adapt MMWX Probe data for Komari and minimalist probe themes"
+  description:
+    en: "A self-hosted multi-theme probe adapter powered by MMWX Probe data, supporting Komari and minimalist probe themes."
+    es-es: "Un adaptador de sondas multitema autoalojado basado en datos de MMWX Probe, compatible con temas Komari y de sondas minimalistas."
+    ja: "MMWX Probe のデータを利用し、Komari とミニマリスト系プローブテーマに対応するセルフホスト型マルチテーマアダプターです。"
+    ms: "Penyesuai probe berbilang tema kendiri berasaskan data MMWX Probe, menyokong tema Komari dan probe minimalis."
+    pt-br: "Um adaptador de sondas multitema auto-hospedado baseado em dados do MMWX Probe, com suporte a temas Komari e de sondas minimalistas."
+    ru: "Самостоятельно размещаемый многотемный адаптер зондов на основе данных MMWX Probe с поддержкой тем Komari и минималистичных зондов."
+    ko: "MMWX Probe 데이터를 기반으로 Komari 및 미니멀 프로브 테마를 지원하는 자체 호스팅 멀티 테마 어댑터입니다."
+    zh-Hant: "以妙妙屋 X 為資料來源的多主題探針適配器，支援 Komari 和極簡探針主題。"
+    zh: "以妙妙屋 X 为数据源的多主题探针适配器，支持 Komari 和极简探针主题。"
+    tr: "MMWX Probe verilerini kullanan, Komari ve minimalist probe temalarını destekleyen kendi kendine barındırılan çok temalı probe adaptörü."
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  architectures:
+    - amd64
+    - arm64
+  website: https://github.com/sunnyhmz7010/mmwx-probe-theme-adapter
+  github: https://github.com/sunnyhmz7010/mmwx-probe-theme-adapter
+  document: "https://github.com/sunnyhmz7010/mmwx-probe-theme-adapter#readme"

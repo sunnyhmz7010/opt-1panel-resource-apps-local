@@ -1,0 +1,129 @@
+additionalProperties:
+  formFields:
+    - default: ""
+      edit: true
+      envKey: MMWX_ORIGIN
+      labelEn: "MMWX Origin"
+      labelZh: "MMWX 主控地址"
+      label:
+        en: "MMWX Origin"
+        es-es: "Origen de MMWX"
+        ja: "MMWXオリジン"
+        ms: "Asal MMWX"
+        pt-br: "Origem do MMWX"
+        ru: "Адрес MMWX"
+        ko: "MMWX 원본 주소"
+        zh-Hant: "MMWX 主控位址"
+        zh: "MMWX 主控地址"
+        tr: "MMWX Kaynağı"
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: PROBE_TOKEN
+      labelEn: "Probe Token"
+      labelZh: "探针令牌"
+      label:
+        en: "Probe Token"
+        es-es: "Token de sonda"
+        ja: "プローブトークン"
+        ms: "Token probe"
+        pt-br: "Token da sonda"
+        ru: "Токен зонда"
+        ko: "프로브 토큰"
+        zh-Hant: "探針權杖"
+        zh: "探针令牌"
+        tr: "Probe Belirteci"
+      required: true
+      type: password
+    - default: ""
+      edit: true
+      envKey: THEME_REPO
+      labelEn: "Theme Repository"
+      labelZh: "主题仓库"
+      label:
+        en: "Theme Repository"
+        es-es: "Repositorio del tema"
+        ja: "テーマリポジトリ"
+        ms: "Repositori tema"
+        pt-br: "Repositório do tema"
+        ru: "Репозиторий темы"
+        ko: "테마 저장소"
+        zh-Hant: "主題儲存庫"
+        zh: "主题仓库"
+        tr: "Tema Deposu"
+      required: true
+      type: text
+    - default: main
+      edit: true
+      envKey: THEME_REF
+      labelEn: "Theme Ref"
+      labelZh: "主题分支或版本"
+      label:
+        en: "Theme Ref"
+        es-es: "Referencia del tema"
+        ja: "テーマ参照"
+        ms: "Rujukan tema"
+        pt-br: "Referência do tema"
+        ru: "Ссылка на тему"
+        ko: "테마 참조"
+        zh-Hant: "主題分支或版本"
+        zh: "主题分支或版本"
+        tr: "Tema Referansı"
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: THEME_GIT_PROXY
+      labelEn: "Git Proxy Prefix"
+      labelZh: "Git 加速代理"
+      label:
+        en: "Git Proxy Prefix"
+        es-es: "Prefijo de proxy Git"
+        ja: "Gitプロキシ接頭辞"
+        ms: "Awalan proksi Git"
+        pt-br: "Prefixo do proxy Git"
+        ru: "Прокси-префикс Git"
+        ko: "Git 프록시 접두사"
+        zh-Hant: "Git 加速代理"
+        zh: "Git 加速代理"
+        tr: "Git Proxy Öneki"
+      required: false
+      type: text
+    - default: 8080
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: "Web UI Port"
+      labelZh: "Web UI 端口"
+      label:
+        en: "Web UI Port"
+        es-es: "Puerto web"
+        ja: "Web UIポート"
+        ms: "Port Web UI"
+        pt-br: "Porta da Web UI"
+        ru: "Порт веб-интерфейса"
+        ko: "웹 UI 포트"
+        zh-Hant: "Web UI 埠"
+        zh: "Web UI 端口"
+        tr: "Web UI Bağlantı Noktası"
+      required: true
+      rule: paramPort
+      type: number
+    - default: ""
+      edit: true
+      envKey: ADMIN_TOKEN
+      labelEn: "Admin Token"
+      labelZh: "管理员令牌"
+      label:
+        en: "Admin Token"
+        es-es: "Token de administrador"
+        ja: "管理者トークン"
+        ms: "Token pentadbir"
+        pt-br: "Token de administrador"
+        ru: "Токен администратора"
+        ko: "관리자 토큰"
+        zh-Hant: "管理員權杖"
+        zh: "管理员令牌"
+        tr: "Yönetici Belirteci"
+      required: false
+      type: password
