@@ -1,6 +1,6 @@
 services:
   mmwx-probe-theme-adapter:
-    image: ghcr.io/sunnyhmz7010/mmwx-probe-theme-adapter:3.0.0
+    image: ghcr.io/sunnyhmz7010/mmwx-probe-theme-adapter:3.0.1
     container_name: "${CONTAINER_NAME}"
     restart: always
     networks:
