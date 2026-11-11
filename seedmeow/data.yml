@@ -1,0 +1,32 @@
+name: SeedMeow
+tags:
+  - Tool
+title: SeedMeow
+description: "监控 NodeSeek 与烧饼论坛新帖，按规则筛选并推送到 MeoW。"
+additionalProperties:
+  key: seedmeow
+  name: SeedMeow
+  tags:
+    - Tool
+  shortDescZh: "监控 NodeSeek 与烧饼论坛新帖，按规则筛选并推送到 MeoW。"
+  shortDescEn: "Monitors NodeSeek and sb.sb feeds and sends matching posts to MeoW."
+  description:
+    en: "Monitors NodeSeek and sb.sb feeds and sends matching posts to MeoW."
+    es-es: "Monitors NodeSeek and sb.sb feeds and sends matching posts to MeoW."
+    ja: "Monitors NodeSeek and sb.sb feeds and sends matching posts to MeoW."
+    ms: "Monitors NodeSeek and sb.sb feeds and sends matching posts to MeoW."
+    pt-br: "Monitors NodeSeek and sb.sb feeds and sends matching posts to MeoW."
+    ru: "Monitors NodeSeek and sb.sb feeds and sends matching posts to MeoW."
+    ko: "Monitors NodeSeek and sb.sb feeds and sends matching posts to MeoW."
+    zh-Hant: "監控 NodeSeek 與燒餅論壇新帖，按規則篩選並推送到 MeoW。"
+    zh: "监控 NodeSeek 与烧饼论坛新帖，按规则筛选并推送到 MeoW。"
+    tr: "Monitors NodeSeek and sb.sb feeds and sends matching posts to MeoW."
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  architectures:
+    - amd64
+    - arm64
+  website: https://github.com/sunnyhmz7010/SeedMeow
+  github: https://github.com/sunnyhmz7010/SeedMeow
+  document: "https://github.com/sunnyhmz7010/SeedMeow#readme"

@@ -1,0 +1,493 @@
+additionalProperties:
+  formFields:
+    - envKey: SOURCES
+      default: nodeseek,sb
+      edit: true
+      required: true
+      type: select
+      label:
+        en: Sources
+        es-es: Sources
+        ja: Sources
+        ms: Sources
+        pt-br: Sources
+        ru: Sources
+        ko: Sources
+        zh-Hant: "监控来源"
+        zh: "监控来源"
+        tr: Sources
+      values:
+        - label: "NodeSeek + 烧饼"
+          value: nodeseek,sb
+        - label: NodeSeek
+          value: nodeseek
+        - label: "烧饼"
+          value: sb
+      labelEn: Sources
+      labelZh: "监控来源"
+    - envKey: NODESEEK_MEOW_NICKNAME
+      default: ""
+      edit: true
+      required: false
+      type: text
+      label:
+        en: "NodeSeek — MeoW Nickname (required when enabled)"
+        es-es: "NodeSeek — MeoW Nickname (required when enabled)"
+        ja: "NodeSeek — MeoW Nickname (required when enabled)"
+        ms: "NodeSeek — MeoW Nickname (required when enabled)"
+        pt-br: "NodeSeek — MeoW Nickname (required when enabled)"
+        ru: "NodeSeek — MeoW Nickname (required when enabled)"
+        ko: "NodeSeek — MeoW Nickname (required when enabled)"
+        zh-Hant: "NodeSeek · MeoW 昵称（启用该来源时必填）"
+        zh: "NodeSeek · MeoW 昵称（启用该来源时必填）"
+        tr: "NodeSeek — MeoW Nickname (required when enabled)"
+      labelEn: "NodeSeek — MeoW Nickname (required when enabled)"
+      labelZh: "NodeSeek · MeoW 昵称（启用该来源时必填）"
+    - envKey: NODESEEK_CHECK_INTERVAL_SECONDS
+      default: 5
+      edit: true
+      required: true
+      type: number
+      label:
+        en: "NodeSeek — Check Interval (seconds, 1–2147483)"
+        es-es: "NodeSeek — Check Interval (seconds, 1–2147483)"
+        ja: "NodeSeek — Check Interval (seconds, 1–2147483)"
+        ms: "NodeSeek — Check Interval (seconds, 1–2147483)"
+        pt-br: "NodeSeek — Check Interval (seconds, 1–2147483)"
+        ru: "NodeSeek — Check Interval (seconds, 1–2147483)"
+        ko: "NodeSeek — Check Interval (seconds, 1–2147483)"
+        zh-Hant: "NodeSeek · 检查间隔（秒，1–2147483）"
+        zh: "NodeSeek · 检查间隔（秒，1–2147483）"
+        tr: "NodeSeek — Check Interval (seconds, 1–2147483)"
+      labelEn: "NodeSeek — Check Interval (seconds, 1–2147483)"
+      labelZh: "NodeSeek · 检查间隔（秒，1–2147483）"
+    - envKey: NODESEEK_KEYWORDS
+      default: "VPS,补货"
+      edit: true
+      required: false
+      type: text
+      label:
+        en: "NodeSeek — Keywords (comma-separated)"
+        es-es: "NodeSeek — Keywords (comma-separated)"
+        ja: "NodeSeek — Keywords (comma-separated)"
+        ms: "NodeSeek — Keywords (comma-separated)"
+        pt-br: "NodeSeek — Keywords (comma-separated)"
+        ru: "NodeSeek — Keywords (comma-separated)"
+        ko: "NodeSeek — Keywords (comma-separated)"
+        zh-Hant: "NodeSeek · 关键词（英文逗号分隔）"
+        zh: "NodeSeek · 关键词（英文逗号分隔）"
+        tr: "NodeSeek — Keywords (comma-separated)"
+      labelEn: "NodeSeek — Keywords (comma-separated)"
+      labelZh: "NodeSeek · 关键词（英文逗号分隔）"
+    - envKey: NODESEEK_KEYWORD_GROUPS
+      default: "[]"
+      edit: true
+      required: false
+      type: text
+      label:
+        en: "NodeSeek — Keyword Groups (JSON array of arrays)"
+        es-es: "NodeSeek — Keyword Groups (JSON array of arrays)"
+        ja: "NodeSeek — Keyword Groups (JSON array of arrays)"
+        ms: "NodeSeek — Keyword Groups (JSON array of arrays)"
+        pt-br: "NodeSeek — Keyword Groups (JSON array of arrays)"
+        ru: "NodeSeek — Keyword Groups (JSON array of arrays)"
+        ko: "NodeSeek — Keyword Groups (JSON array of arrays)"
+        zh-Hant: "NodeSeek · 组合关键词（JSON 二维数组）"
+        zh: "NodeSeek · 组合关键词（JSON 二维数组）"
+        tr: "NodeSeek — Keyword Groups (JSON array of arrays)"
+      labelEn: "NodeSeek — Keyword Groups (JSON array of arrays)"
+      labelZh: "NodeSeek · 组合关键词（JSON 二维数组）"
+    - envKey: NODESEEK_REGEX_PATTERNS
+      default: "[]"
+      edit: true
+      required: false
+      type: text
+      label:
+        en: "NodeSeek — Regex Patterns (JSON string array)"
+        es-es: "NodeSeek — Regex Patterns (JSON string array)"
+        ja: "NodeSeek — Regex Patterns (JSON string array)"
+        ms: "NodeSeek — Regex Patterns (JSON string array)"
+        pt-br: "NodeSeek — Regex Patterns (JSON string array)"
+        ru: "NodeSeek — Regex Patterns (JSON string array)"
+        ko: "NodeSeek — Regex Patterns (JSON string array)"
+        zh-Hant: "NodeSeek · 正则规则（JSON 字符串数组）"
+        zh: "NodeSeek · 正则规则（JSON 字符串数组）"
+        tr: "NodeSeek — Regex Patterns (JSON string array)"
+      labelEn: "NodeSeek — Regex Patterns (JSON string array)"
+      labelZh: "NodeSeek · 正则规则（JSON 字符串数组）"
+    - envKey: NODESEEK_PUSH_CATEGORY
+      default: ""
+      edit: true
+      required: false
+      type: text
+      label:
+        en: "NodeSeek — Push Category (all or daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox)"
+        es-es: "NodeSeek — Push Category (all or daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox)"
+        ja: "NodeSeek — Push Category (all or daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox)"
+        ms: "NodeSeek — Push Category (all or daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox)"
+        pt-br: "NodeSeek — Push Category (all or daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox)"
+        ru: "NodeSeek — Push Category (all or daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox)"
+        ko: "NodeSeek — Push Category (all or daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox)"
+        zh-Hant: "NodeSeek · 版块匹配（all 或 daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox）"
+        zh: "NodeSeek · 版块匹配（all 或 daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox）"
+        tr: "NodeSeek — Push Category (all or daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox)"
+      labelEn: "NodeSeek — Push Category (all or daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox)"
+      labelZh: "NodeSeek · 版块匹配（all 或 daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox）"
+    - envKey: NODESEEK_CATEGORIES
+      default: all
+      edit: true
+      required: true
+      type: text
+      label:
+        en: "NodeSeek — Category Filter (all or daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox)"
+        es-es: "NodeSeek — Category Filter (all or daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox)"
+        ja: "NodeSeek — Category Filter (all or daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox)"
+        ms: "NodeSeek — Category Filter (all or daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox)"
+        pt-br: "NodeSeek — Category Filter (all or daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox)"
+        ru: "NodeSeek — Category Filter (all or daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox)"
+        ko: "NodeSeek — Category Filter (all or daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox)"
+        zh-Hant: "NodeSeek · 版块过滤（all 或 daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox）"
+        zh: "NodeSeek · 版块过滤（all 或 daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox）"
+        tr: "NodeSeek — Category Filter (all or daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox)"
+      labelEn: "NodeSeek — Category Filter (all or daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox)"
+      labelZh: "NodeSeek · 版块过滤（all 或 daily,tech,info,review,trade,carpool,promo,life,dev,photo-share,expose,inner,sandbox）"
+    - envKey: NODESEEK_BLOCK_KEYWORDS
+      default: ""
+      edit: true
+      required: false
+      type: text
+      label:
+        en: "NodeSeek — Block Keywords"
+        es-es: "NodeSeek — Block Keywords"
+        ja: "NodeSeek — Block Keywords"
+        ms: "NodeSeek — Block Keywords"
+        pt-br: "NodeSeek — Block Keywords"
+        ru: "NodeSeek — Block Keywords"
+        ko: "NodeSeek — Block Keywords"
+        zh-Hant: "NodeSeek · 屏蔽词"
+        zh: "NodeSeek · 屏蔽词"
+        tr: "NodeSeek — Block Keywords"
+      labelEn: "NodeSeek — Block Keywords"
+      labelZh: "NodeSeek · 屏蔽词"
+    - envKey: NODESEEK_MATCH_SCOPE
+      default: all
+      edit: true
+      required: true
+      type: select
+      label:
+        en: "NodeSeek — Match Scope"
+        es-es: "NodeSeek — Match Scope"
+        ja: "NodeSeek — Match Scope"
+        ms: "NodeSeek — Match Scope"
+        pt-br: "NodeSeek — Match Scope"
+        ru: "NodeSeek — Match Scope"
+        ko: "NodeSeek — Match Scope"
+        zh-Hant: "NodeSeek · 匹配范围"
+        zh: "NodeSeek · 匹配范围"
+        tr: "NodeSeek — Match Scope"
+      values:
+        - label: "全部"
+          value: all
+        - label: "标题"
+          value: title
+        - label: "摘要"
+          value: summary
+      labelEn: "NodeSeek — Match Scope"
+      labelZh: "NodeSeek · 匹配范围"
+    - envKey: NODESEEK_PUSH_EXISTING
+      default: "false"
+      edit: true
+      required: true
+      type: select
+      label:
+        en: "NodeSeek — Push Existing Posts"
+        es-es: "NodeSeek — Push Existing Posts"
+        ja: "NodeSeek — Push Existing Posts"
+        ms: "NodeSeek — Push Existing Posts"
+        pt-br: "NodeSeek — Push Existing Posts"
+        ru: "NodeSeek — Push Existing Posts"
+        ko: "NodeSeek — Push Existing Posts"
+        zh-Hant: "NodeSeek · 首次推送已有帖子"
+        zh: "NodeSeek · 首次推送已有帖子"
+        tr: "NodeSeek — Push Existing Posts"
+      values:
+        - label: "开启"
+          value: "true"
+        - label: "关闭"
+          value: "false"
+      labelEn: "NodeSeek — Push Existing Posts"
+      labelZh: "NodeSeek · 首次推送已有帖子"
+    - envKey: NODESEEK_SHOW_LINK_URL
+      default: "false"
+      edit: true
+      required: true
+      type: select
+      label:
+        en: "NodeSeek — Show Link URL"
+        es-es: "NodeSeek — Show Link URL"
+        ja: "NodeSeek — Show Link URL"
+        ms: "NodeSeek — Show Link URL"
+        pt-br: "NodeSeek — Show Link URL"
+        ru: "NodeSeek — Show Link URL"
+        ko: "NodeSeek — Show Link URL"
+        zh-Hant: "NodeSeek · 显示帖子链接"
+        zh: "NodeSeek · 显示帖子链接"
+        tr: "NodeSeek — Show Link URL"
+      values:
+        - label: "开启"
+          value: "true"
+        - label: "关闭"
+          value: "false"
+      labelEn: "NodeSeek — Show Link URL"
+      labelZh: "NodeSeek · 显示帖子链接"
+    - envKey: NODESEEK_HEALTH_CHECK_MINUTES
+      default: 1440
+      edit: true
+      required: true
+      type: number
+      label:
+        en: "NodeSeek — Health Check (minutes, 0–1440; 0 disables)"
+        es-es: "NodeSeek — Health Check (minutes, 0–1440; 0 disables)"
+        ja: "NodeSeek — Health Check (minutes, 0–1440; 0 disables)"
+        ms: "NodeSeek — Health Check (minutes, 0–1440; 0 disables)"
+        pt-br: "NodeSeek — Health Check (minutes, 0–1440; 0 disables)"
+        ru: "NodeSeek — Health Check (minutes, 0–1440; 0 disables)"
+        ko: "NodeSeek — Health Check (minutes, 0–1440; 0 disables)"
+        zh-Hant: "NodeSeek · 自检间隔（分钟，0–1440；0 关闭）"
+        zh: "NodeSeek · 自检间隔（分钟，0–1440；0 关闭）"
+        tr: "NodeSeek — Health Check (minutes, 0–1440; 0 disables)"
+      labelEn: "NodeSeek — Health Check (minutes, 0–1440; 0 disables)"
+      labelZh: "NodeSeek · 自检间隔（分钟，0–1440；0 关闭）"
+    - envKey: SB_MEOW_NICKNAME
+      default: ""
+      edit: true
+      required: false
+      type: text
+      label:
+        en: "SB — MeoW Nickname (required when enabled)"
+        es-es: "SB — MeoW Nickname (required when enabled)"
+        ja: "SB — MeoW Nickname (required when enabled)"
+        ms: "SB — MeoW Nickname (required when enabled)"
+        pt-br: "SB — MeoW Nickname (required when enabled)"
+        ru: "SB — MeoW Nickname (required when enabled)"
+        ko: "SB — MeoW Nickname (required when enabled)"
+        zh-Hant: "烧饼 · MeoW 昵称（启用该来源时必填）"
+        zh: "烧饼 · MeoW 昵称（启用该来源时必填）"
+        tr: "SB — MeoW Nickname (required when enabled)"
+      labelEn: "SB — MeoW Nickname (required when enabled)"
+      labelZh: "烧饼 · MeoW 昵称（启用该来源时必填）"
+    - envKey: SB_CHECK_INTERVAL_SECONDS
+      default: 60
+      edit: true
+      required: true
+      type: number
+      label:
+        en: "SB — Check Interval (seconds, 1–2147483)"
+        es-es: "SB — Check Interval (seconds, 1–2147483)"
+        ja: "SB — Check Interval (seconds, 1–2147483)"
+        ms: "SB — Check Interval (seconds, 1–2147483)"
+        pt-br: "SB — Check Interval (seconds, 1–2147483)"
+        ru: "SB — Check Interval (seconds, 1–2147483)"
+        ko: "SB — Check Interval (seconds, 1–2147483)"
+        zh-Hant: "烧饼 · 检查间隔（秒，1–2147483）"
+        zh: "烧饼 · 检查间隔（秒，1–2147483）"
+        tr: "SB — Check Interval (seconds, 1–2147483)"
+      labelEn: "SB — Check Interval (seconds, 1–2147483)"
+      labelZh: "烧饼 · 检查间隔（秒，1–2147483）"
+    - envKey: SB_KEYWORDS
+      default: "VPS,优惠"
+      edit: true
+      required: false
+      type: text
+      label:
+        en: "SB — Keywords (comma-separated)"
+        es-es: "SB — Keywords (comma-separated)"
+        ja: "SB — Keywords (comma-separated)"
+        ms: "SB — Keywords (comma-separated)"
+        pt-br: "SB — Keywords (comma-separated)"
+        ru: "SB — Keywords (comma-separated)"
+        ko: "SB — Keywords (comma-separated)"
+        zh-Hant: "烧饼 · 关键词（英文逗号分隔）"
+        zh: "烧饼 · 关键词（英文逗号分隔）"
+        tr: "SB — Keywords (comma-separated)"
+      labelEn: "SB — Keywords (comma-separated)"
+      labelZh: "烧饼 · 关键词（英文逗号分隔）"
+    - envKey: SB_KEYWORD_GROUPS
+      default: "[]"
+      edit: true
+      required: false
+      type: text
+      label:
+        en: "SB — Keyword Groups (JSON array of arrays)"
+        es-es: "SB — Keyword Groups (JSON array of arrays)"
+        ja: "SB — Keyword Groups (JSON array of arrays)"
+        ms: "SB — Keyword Groups (JSON array of arrays)"
+        pt-br: "SB — Keyword Groups (JSON array of arrays)"
+        ru: "SB — Keyword Groups (JSON array of arrays)"
+        ko: "SB — Keyword Groups (JSON array of arrays)"
+        zh-Hant: "烧饼 · 组合关键词（JSON 二维数组）"
+        zh: "烧饼 · 组合关键词（JSON 二维数组）"
+        tr: "SB — Keyword Groups (JSON array of arrays)"
+      labelEn: "SB — Keyword Groups (JSON array of arrays)"
+      labelZh: "烧饼 · 组合关键词（JSON 二维数组）"
+    - envKey: SB_REGEX_PATTERNS
+      default: "[]"
+      edit: true
+      required: false
+      type: text
+      label:
+        en: "SB — Regex Patterns (JSON string array)"
+        es-es: "SB — Regex Patterns (JSON string array)"
+        ja: "SB — Regex Patterns (JSON string array)"
+        ms: "SB — Regex Patterns (JSON string array)"
+        pt-br: "SB — Regex Patterns (JSON string array)"
+        ru: "SB — Regex Patterns (JSON string array)"
+        ko: "SB — Regex Patterns (JSON string array)"
+        zh-Hant: "烧饼 · 正则规则（JSON 字符串数组）"
+        zh: "烧饼 · 正则规则（JSON 字符串数组）"
+        tr: "SB — Regex Patterns (JSON string array)"
+      labelEn: "SB — Regex Patterns (JSON string array)"
+      labelZh: "烧饼 · 正则规则（JSON 字符串数组）"
+    - envKey: SB_PUSH_CATEGORY
+      default: ""
+      edit: true
+      required: false
+      type: text
+      label:
+        en: "SB — Push Category (all or general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement)"
+        es-es: "SB — Push Category (all or general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement)"
+        ja: "SB — Push Category (all or general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement)"
+        ms: "SB — Push Category (all or general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement)"
+        pt-br: "SB — Push Category (all or general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement)"
+        ru: "SB — Push Category (all or general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement)"
+        ko: "SB — Push Category (all or general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement)"
+        zh-Hant: "烧饼 · 版块匹配（all 或 general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement）"
+        zh: "烧饼 · 版块匹配（all 或 general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement）"
+        tr: "SB — Push Category (all or general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement)"
+      labelEn: "SB — Push Category (all or general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement)"
+      labelZh: "烧饼 · 版块匹配（all 或 general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement）"
+    - envKey: SB_CATEGORIES
+      default: all
+      edit: true
+      required: true
+      type: text
+      label:
+        en: "SB — Category Filter (all or general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement)"
+        es-es: "SB — Category Filter (all or general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement)"
+        ja: "SB — Category Filter (all or general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement)"
+        ms: "SB — Category Filter (all or general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement)"
+        pt-br: "SB — Category Filter (all or general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement)"
+        ru: "SB — Category Filter (all or general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement)"
+        ko: "SB — Category Filter (all or general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement)"
+        zh-Hant: "烧饼 · 版块过滤（all 或 general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement）"
+        zh: "烧饼 · 版块过滤（all 或 general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement）"
+        tr: "SB — Category Filter (all or general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement)"
+      labelEn: "SB — Category Filter (all or general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement)"
+      labelZh: "烧饼 · 版块过滤（all 或 general,ai,domains,hosting,hardware,trade,promotion,discounts,share,tech,jobs,invest,announcement）"
+    - envKey: SB_BLOCK_KEYWORDS
+      default: ""
+      edit: true
+      required: false
+      type: text
+      label:
+        en: "SB — Block Keywords"
+        es-es: "SB — Block Keywords"
+        ja: "SB — Block Keywords"
+        ms: "SB — Block Keywords"
+        pt-br: "SB — Block Keywords"
+        ru: "SB — Block Keywords"
+        ko: "SB — Block Keywords"
+        zh-Hant: "烧饼 · 屏蔽词"
+        zh: "烧饼 · 屏蔽词"
+        tr: "SB — Block Keywords"
+      labelEn: "SB — Block Keywords"
+      labelZh: "烧饼 · 屏蔽词"
+    - envKey: SB_MATCH_SCOPE
+      default: all
+      edit: true
+      required: true
+      type: select
+      label:
+        en: "SB — Match Scope"
+        es-es: "SB — Match Scope"
+        ja: "SB — Match Scope"
+        ms: "SB — Match Scope"
+        pt-br: "SB — Match Scope"
+        ru: "SB — Match Scope"
+        ko: "SB — Match Scope"
+        zh-Hant: "烧饼 · 匹配范围"
+        zh: "烧饼 · 匹配范围"
+        tr: "SB — Match Scope"
+      values:
+        - label: "全部"
+          value: all
+        - label: "标题"
+          value: title
+        - label: "摘要"
+          value: summary
+      labelEn: "SB — Match Scope"
+      labelZh: "烧饼 · 匹配范围"
+    - envKey: SB_PUSH_EXISTING
+      default: "false"
+      edit: true
+      required: true
+      type: select
+      label:
+        en: "SB — Push Existing Posts"
+        es-es: "SB — Push Existing Posts"
+        ja: "SB — Push Existing Posts"
+        ms: "SB — Push Existing Posts"
+        pt-br: "SB — Push Existing Posts"
+        ru: "SB — Push Existing Posts"
+        ko: "SB — Push Existing Posts"
+        zh-Hant: "烧饼 · 首次推送已有帖子"
+        zh: "烧饼 · 首次推送已有帖子"
+        tr: "SB — Push Existing Posts"
+      values:
+        - label: "开启"
+          value: "true"
+        - label: "关闭"
+          value: "false"
+      labelEn: "SB — Push Existing Posts"
+      labelZh: "烧饼 · 首次推送已有帖子"
+    - envKey: SB_SHOW_LINK_URL
+      default: "false"
+      edit: true
+      required: true
+      type: select
+      label:
+        en: "SB — Show Link URL"
+        es-es: "SB — Show Link URL"
+        ja: "SB — Show Link URL"
+        ms: "SB — Show Link URL"
+        pt-br: "SB — Show Link URL"
+        ru: "SB — Show Link URL"
+        ko: "SB — Show Link URL"
+        zh-Hant: "烧饼 · 显示帖子链接"
+        zh: "烧饼 · 显示帖子链接"
+        tr: "SB — Show Link URL"
+      values:
+        - label: "开启"
+          value: "true"
+        - label: "关闭"
+          value: "false"
+      labelEn: "SB — Show Link URL"
+      labelZh: "烧饼 · 显示帖子链接"
+    - envKey: SB_HEALTH_CHECK_MINUTES
+      default: 1440
+      edit: true
+      required: true
+      type: number
+      label:
+        en: "SB — Health Check (minutes, 0–1440; 0 disables)"
+        es-es: "SB — Health Check (minutes, 0–1440; 0 disables)"
+        ja: "SB — Health Check (minutes, 0–1440; 0 disables)"
+        ms: "SB — Health Check (minutes, 0–1440; 0 disables)"
+        pt-br: "SB — Health Check (minutes, 0–1440; 0 disables)"
+        ru: "SB — Health Check (minutes, 0–1440; 0 disables)"
+        ko: "SB — Health Check (minutes, 0–1440; 0 disables)"
+        zh-Hant: "烧饼 · 自检间隔（分钟，0–1440；0 关闭）"
+        zh: "烧饼 · 自检间隔（分钟，0–1440；0 关闭）"
+        tr: "SB — Health Check (minutes, 0–1440; 0 disables)"
+      labelEn: "SB — Health Check (minutes, 0–1440; 0 disables)"
+      labelZh: "烧饼 · 自检间隔（分钟，0–1440；0 关闭）"
