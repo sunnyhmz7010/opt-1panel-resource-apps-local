@@ -1,0 +1,32 @@
+name: SBMeow
+tags:
+  - Tool
+title: SBMeow
+description: "自动监控烧饼论坛（sb.sb）新帖，按关键词筛选后推送到 MeoW。"
+additionalProperties:
+  key: sbmeow
+  name: SBMeow
+  tags:
+    - Tool
+  shortDescZh: "自动监控烧饼论坛（sb.sb）新帖，按关键词筛选后推送到 MeoW。"
+  shortDescEn: "Automatically monitors shaobing forum (sb.sb) feed posts and pushes keyword-matched results to MeoW."
+  description:
+    en: "Automatically monitors shaobing forum (sb.sb) feed posts and pushes keyword-matched results to MeoW."
+    es-es: "Automatically monitors shaobing forum (sb.sb) feed posts and pushes keyword-matched results to MeoW."
+    ja: "Automatically monitors shaobing forum (sb.sb) feed posts and pushes keyword-matched results to MeoW."
+    ms: "Automatically monitors shaobing forum (sb.sb) feed posts and pushes keyword-matched results to MeoW."
+    pt-br: "Automatically monitors shaobing forum (sb.sb) feed posts and pushes keyword-matched results to MeoW."
+    ru: "Automatically monitors shaobing forum (sb.sb) feed posts and pushes keyword-matched results to MeoW."
+    ko: "Automatically monitors shaobing forum (sb.sb) feed posts and pushes keyword-matched results to MeoW."
+    zh-Hant: "自動監控燒餅論壇（sb.sb）新帖，按關鍵詞篩選後推送到 MeoW。"
+    zh: "自动监控烧饼论坛（sb.sb）新帖，按关键词筛选后推送到 MeoW。"
+    tr: "Automatically monitors shaobing forum (sb.sb) feed posts and pushes keyword-matched results to MeoW."
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  architectures:
+    - amd64
+    - arm64
+  website: https://github.com/sunnyhmz7010/SBMeow
+  github: https://github.com/sunnyhmz7010/SBMeow
+  document: "https://github.com/sunnyhmz7010/SBMeow#readme"
